@@ -20,7 +20,6 @@ io.on('connection', (socket) => {
     // Send the private message to the specific socket ID
     io.to(data.socketId).emit('privateMessage', {
       senderSocketId: data.socketId,
-      userId: data.userId,
       message: data.message,
       distance: data.distance
     });
