@@ -3,7 +3,6 @@ const userData = [];
 function connectUsers(data) {
     const user = data;
     userList.push(user);
-    console.log(userList);
     return user;
 }
 
